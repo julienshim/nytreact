@@ -6,4 +6,4 @@ New York Times React Search was created for the NYT React Search homework assign
 
 **App Demo GIF**
 
-<img src="https://github.com/jerauld/clicky-game/blob/master/public/images/App-Demo.gif?raw=true" width="600px"/>
+<img src="https://github.com/jerauld/nytreact/blob/master/client/public/images/nytreact.gif" width="600px"/>

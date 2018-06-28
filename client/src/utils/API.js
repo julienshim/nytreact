@@ -1,7 +1,7 @@
 import axios from "axios";
-// require('dotenv').config();
 
-var APIKEY = "769ae556259949f9bb72bf4556f8d25c"            
+
+var APIKEY = "769ae556259949f9bb72bf4556f8d25c";          
 
 var API = {
   // Query NYT API

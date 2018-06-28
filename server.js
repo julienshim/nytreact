@@ -1,7 +1,8 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const path = require("path");
 const bodyParser = require("body-parser");
+const mongoose = require ("mongoose");
+
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -16,18 +17,15 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-
 var articlesController = require("./controllers/articles-controller");
 
-// Get saved articles
+// Define API routes here
 app.get("/api/articles", articlesController.findAll);
-// Save articles
 app.post("/api/articles", articlesController.insert);
-// delete saved articles
 app.delete("/api/articles/:id", articlesController.delete);
+
+// Send every other request to the React app
+// Define any API routes before this runs
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });

@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "nyt-react",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "NYT React",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^3.5.0",
+    "concurrently": "^4.1.1",
     "nodemon": "^1.11.0"
   },
   "dependencies": {

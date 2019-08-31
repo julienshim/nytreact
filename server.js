@@ -7,7 +7,10 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nytreact");
+const config = {
+  useNewUrlParser: true
+}
+mongoose.connect(MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nytreact", config);
 
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));

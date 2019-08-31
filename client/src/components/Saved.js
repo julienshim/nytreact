@@ -11,7 +11,7 @@ const Saved = (props) => {
       <p className="card-text">{props.date.substring(0, 10)}</p>
           </div>
           <div className="col-md-6 text-right">
-          <a href={props.url} target="_blank" className="btn btn-outline-success btn-sm mr-1">View Article</a>
+          <a href={props.url} target="_blank" rel="noopener noreferrer" className="btn btn-outline-success btn-sm mr-1">View Article</a>
       <button className="btn btn-outline-danger btn-sm" onClick={() => props.handleDeleteButton(props._id)}>Remove from Saved</button>
           </div>
         </div>

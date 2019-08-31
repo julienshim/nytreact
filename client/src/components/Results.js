@@ -11,7 +11,7 @@ const Results = (props) => {
             <p className="card-text">{props.date.substring(0, 10)}</p>
           </div>
           <div className="col-md-6 text-right">
-            <a href={props.url} target="_blank" className="btn btn-outline-success btn-sm mr-1">View Article</a>
+            <a href={props.url} target="_blank" rel="noopener noreferrer" className="btn btn-outline-success btn-sm mr-1">View Article</a>
             <button className="btn btn-outline-info btn-sm" onClick={() => props.handleSaveButton(props._id)}>Save Article</button>
           </div>
         </div>
